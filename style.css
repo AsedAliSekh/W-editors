@@ -2,6 +2,8 @@
 /* :root{
     --main
 } */
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -51,9 +53,9 @@
     background-color: aliceblue;
 }
 
-.active{
+.topnav .active{
     color: aliceblue;
-    background-color: #f86da4;
+    background-color: #f86da4 !important;
 }
 
 /* logo style */
@@ -69,6 +71,7 @@
 .topnav #logo_text{
     color: white;
     padding: 10px;
+    font-family: 'Delicious Handrawn', cursive;
 }
 
 
@@ -89,3 +92,234 @@
 } */
 
 /* end top nav bar  */
+
+
+.typewriter{
+    text-align: center;
+    color: #fefe7a;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    position: relative;
+    margin-top: 300px;
+    font-size: 48px;
+    font-weight: bolder;/* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+
+/* follower counter  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+
+
+#sub-count{
+  background-color: #8e44ad;
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* start footer design  */
+footer{
+    background: #363030;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+  }
+  
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+  }
+  
+  
+  /* social icons  */
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+  }
+  .socials a:hover i{
+    color: #f86da4;
+  }
+  
+  /* footer menu  */
+  .footer-menu{
+    float: right;
+  }
+  
+  .footer-menu ul{
+    display: flex;
+  }
+  
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  
+  .footer-menu ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+    padding: 4px 39px;    
+    display: block;
+    margin: 0 10px;
+    border: 1px solid #cfd2d6;
+    border-radius: 50%
+  }
+  
+  .footer-menu ul li a:hover{
+    color: #f86da4;
+  }
+  
+  
+  /* footer copyright  */
+  .footer-content .footer-bottom{
+    background: rgb(20, 19, 19);
+    width: 100vw;
+    margin-top: 15px;
+  }
+  
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* about section  */
+  .about-section{
+    background-color: whitesmoke;
+    text-align: center;
+    height: 300px;
+  }
