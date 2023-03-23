@@ -1,1 +1,91 @@
 @import "css/responsive.css";
+:root{
+    --main
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid red; */
+}
+/* universal padding  */
+.uni-padding{
+    padding: 0px 17px;
+}
+
+
+#landing{
+    display: inline-block;
+    max-height: 100vh;
+    background-image: url('images/landing.jpg');
+    background-size:100%; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+
+/* start top nav bar  */
+.topnav{
+    background-color: #363030;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0px 4px 19px;
+}
+
+
+.topnav a{
+    /* float: center;    // use for responsive */
+    float: right;
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.topnav a:hover{
+    color: #333;
+    background-color: aliceblue;
+}
+
+.active{
+    color: aliceblue;
+    background-color: #f86da4;
+}
+
+/* logo style */
+.topnav #logo_img{
+    float: left;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 50px;
+    
+}
+.topnav #logo_text{
+    color: white;
+    padding: 10px;
+}
+
+
+.topnav .icon{
+    display: none;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky{
+    padding-top: 60px;
+} */
+
+/* end top nav bar  */
