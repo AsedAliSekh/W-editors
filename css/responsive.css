@@ -46,4 +46,22 @@
   .footer-menu ul li{
     padding: 10px;
   }
+
+  
+}
+
+@media screen and (max-width: 600px) {
+  #whyContent{
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 5px 12px;
+  }
+  .why33 img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
 }

@@ -1,7 +1,4 @@
 @import "css/responsive.css";
-/* :root{
-    --main
-} */
 
 
 *{
@@ -136,9 +133,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 260px;
   overflow: hidden;
-  margin: 0;
+  margin-top: -20px;
 }
 
 
@@ -161,15 +158,164 @@
   }
 }
 
+/* slide show  */
+/* start image slide style */
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+  max-height: 100vh;
+}
+.slideshow-container {
+  max-width: 100%;
+  max-height: 100vh;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #f86da4;
+}
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  position: relative;
+  top: -60px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #f86da4;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
 
 
 
 
+/* Why Us Section*/
+#whyUs{
+  background-color: #d5bec7;
+}
+#whyText{
+  color: #ee5253;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 8px;
+}
+#whyContent{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  padding: 5px 12px;
+}
+.why33 h1{
+  color: #ee5253;
+}
 
 
 
+/*Blog*/
+.why33 a{
+  text-decoration: none;
+  color: #ee5253;
+}
+.why33 img{
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
 
-
+/*Subscribe Newsletter*/
+#sub{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #ee5253;
+  color: white;
+  margin-top: 20px;
+}
+#subText{
+  padding: 10px;
+}
+#subInput{
+  margin: auto;
+}
+#subInput input{
+  font-size: 23px;
+  color: #ee5253;
+  border-radius: 5px;
+}
 
 
 
